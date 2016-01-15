@@ -27,6 +27,11 @@
 # inherit from common m7-common
 -include device/htc/m7-common/BoardConfigCommon.mk
 
+# LLVM
+USE_CLANG_QCOM_VERBOSE := true
+CLANG_QCOM_COMPILE_BIONIC := true
+USE_CLANG_QCOM_LTO := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := m7,m7att,m7tmo,m7ul
 
